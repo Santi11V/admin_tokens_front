@@ -1,0 +1,76 @@
+@use '@angular/material' as mat;
+
+// Customize the entire app. Change :root to your selector if you want to scope the styles.
+:host {
+  @include mat.table-overrides((
+    header-headline-size: 14px,
+    row-item-label-text-size: 12px,
+    header-container-height: 30px,
+    row-item-container-height: 30px,
+    background-color: #f6f6f9,
+    row-item-label-text-color: black,
+  ));
+
+  @include mat.paginator-overrides((
+    container-size: 10px,
+    container-text-size: 10px,
+    select-trigger-text-size: 10px
+  ));
+}
+
+button {
+  @include mat.button-overrides((
+    filled-label-text-size: 12px,
+    filled-container-color: #E30613,
+    filled-label-text-color: white,
+    filled-container-height: 30px,
+    filled-horizontal-padding: 20px
+  ));
+}
+
+button.edit {
+  @include mat.icon-button-overrides((
+    icon-color: rgb(59, 59, 155)
+  ))
+}
+
+button.delete {
+  @include mat.icon-button-overrides((
+    icon-color: #E30613
+  ))
+}
+
+.mat-mdc-header-row {
+  background-color: #212121 !important;
+  text-align: center !important;
+  justify-content: center !important;
+}
+
+.mat-mdc-header-cell,
+.mat-mdc-cell {
+  text-align: center;
+  justify-content: center;
+}
+
+.mat-mdc-row {
+  background-color: rgb(239, 239, 239);
+}
+
+mat-form-field {
+  @include mat.form-field-overrides(((
+    container-vertical-padding: 7px,
+    container-height: 30px,
+    container-text-size: 12px,
+    outlined-label-text-size: 12px
+  )))
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.controls button {
+  margin-top: -20px;
+}

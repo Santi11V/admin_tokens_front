@@ -1,0 +1,23 @@
+@use '@angular/material' as mat;
+
+.title-menu span[mat-line] {
+    color: rgb(white, 0.8)
+}
+
+.divider {
+    width: 90%;
+    margin-left: 10px;
+}
+
+.link {
+    text-decoration: none;
+}
+
+mat-list-item {
+    @include mat.list-overrides((
+        active-indicator-shape: 0px,
+        active-indicator-color: #E30613,
+        list-item-hover-state-layer-color: #E30613,
+        list-item-hover-state-layer-opacity: 0.2
+    ))
+}

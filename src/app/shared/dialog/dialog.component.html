@@ -1,0 +1,81 @@
+<h2 mat-dialog-title>{{ title }} cliente</h2>
+<mat-dialog-content>
+    <div class="content">
+        <div>
+            <mat-form-field appearance="outline">
+                <mat-label>Identificación</mat-label>
+                <input matInput placeholder="Identificación">
+                <mat-icon matSuffix>badge</mat-icon>
+            </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field appearance="outline">
+                <mat-label>Nombre</mat-label>
+                <input matInput placeholder="Nombre">
+                <mat-icon matSuffix>person</mat-icon>
+            </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field appearance="outline">
+                <mat-label>Correo electrónico</mat-label>
+                <input matInput placeholder="Correo electrónico">
+                <mat-icon matSuffix>alternate_email</mat-icon>
+            </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field appearance="outline">
+                <mat-label>Entidad</mat-label>
+                <input matInput placeholder="Entidad">
+                <mat-icon matSuffix>domain</mat-icon>
+            </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field appearance="outline">
+                <mat-label>Número a validar (ANI)</mat-label>
+                <input matInput placeholder="Número a validar (ANI)">
+                <mat-icon matSuffix>phone_enabled</mat-icon>
+            </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field appearance="outline">
+                <mat-label>Ani 2</mat-label>
+                <input matInput placeholder="Ani 2">
+                <mat-icon matSuffix>phone_enabled</mat-icon>
+            </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field appearance="outline">
+                <mat-label>Ani 3</mat-label>
+                <input matInput placeholder="Ani 3">
+                <mat-icon matSuffix>phone_enabled</mat-icon>
+            </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field appearance="outline">
+                <mat-label>Ani 4</mat-label>
+                <input matInput placeholder="Ani 4">
+                <mat-icon matSuffix>phone_enabled</mat-icon>
+            </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field appearance="outline">
+                <mat-label>Ani 5</mat-label>
+                <input matInput placeholder="Ani 5">
+                <mat-icon matSuffix>phone_enabled</mat-icon>
+            </mat-form-field>
+        </div>
+    </div>
+</mat-dialog-content>
+
+<mat-dialog-actions>
+    @if(title == 'Editar'){
+        <div class="generate-pin">
+            <button mat-flat-button (click)="onGeneratePin()">Generar pin</button>
+        </div>
+    }
+
+    <div class="action-buttons">
+        <button mat-flat-button class="submit">Guardar</button>
+        <button mat-flat-button (click)="onCancel()">Cancelar</button>
+    </div>
+</mat-dialog-actions>

@@ -1,0 +1,20 @@
+@use '@angular/material' as mat;
+
+.card {
+    @include mat.elevation(2);
+
+    @include mat.card-overrides((
+        outlined-container-color: #f6f6f9,
+        outlined-outline-color: #f6f6f9
+    ))
+}
+
+.card {
+    margin-bottom: 30px;
+    margin-top: -20px;
+    min-height: 70vh;
+}
+
+h2 {
+    font-size: 30px;
+}

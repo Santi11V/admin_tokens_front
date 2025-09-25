@@ -1,0 +1,48 @@
+@use '@angular/material' as mat;
+
+mat-form-field {
+  @include mat.form-field-overrides((
+    outlined-focus-label-text-color: white,
+    outlined-label-text-color: white,
+    outlined-input-text-color: white,
+    container-text-size: 12px,
+  ));
+}
+  
+button {
+  @include mat.button-overrides((
+    filled-container-height: 25px,
+    filled-container-color: white,
+  ));
+}
+
+.submit {
+  @include mat.button-overrides((
+    filled-container-color: #E30613,
+    filled-label-text-color: white
+  ));
+}
+
+.generate-pin button {
+  @include mat.button-overrides((
+    filled-container-color: green,
+    filled-label-text-color: white
+  ));
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+mat-dialog-actions {
+  display: flex;
+}
+
+.action-buttons {
+  margin-left: auto;
+  display: flex;
+}

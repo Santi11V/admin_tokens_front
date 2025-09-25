@@ -1,0 +1,20 @@
+@use '@angular/material' as mat;
+
+button {
+    @include mat.button-overrides((
+        filled-container-color: #E30613,
+        filled-label-text-color: white
+    ))
+}
+
+mat-toolbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.closeSessionButton {
+    font-size: 10px;
+    width: 80px;
+    height: 25px;
+}
